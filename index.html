@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function saveLocal() {
+        let storage
+        localStorage.setItem("nameofperson", document.getElementById("nameofperson").value)
+        storage = document.getElementById("emailadd")
+        localStorage.setItem("emailaddress", storage.value)
+        storage = document.getElementById("age")
+        localStorage.setItem("age", storage.value)
+}
+    </script>
+</head>
+<body>
+    <div id="register">
+        <h1>Registration for Football Team</h1>
+        <form action='showdata.html'>
+            <div>
+                <p>
+                    <label for="nameofperson">Name<br/><br/></label>
+                    <input type="text" name="nameofperson" required="" id="nameofperson">    
+                </p>
+                
+                <p>
+                    <label for="emailaddress">Email adress<br/><br/></label>
+                    <input type="email" name="emailaddress" id="emailadd">    
+                </p>
+                
+                <p>
+                    <label for="age">Age<br/><br/></label>
+                    <input type="number" name="age" id="age">    
+                </p>
+                
+                <p>
+                    <label for="gender" class="radio">Gender<br/><br/></label>
+                    <input type="radio" name="gender" value="M">  Male
+                    <input type="radio" name="gender" value="F">  Female
+                </p>
+                
+                <p>
+                    <label for="dob">Date of birth<br/><br/></label>
+                    <input type="date" name="dob" id="dob">
+                </p>
+                
+                <p>
+                    <label for="category">Age category<br/><br/>
+                        
+                        <input type="radio" name="category" value="U17">Under 17
+                        <input type="radio" name="category" value="U19">Under 19
+
+                    </label>
+                    
+                    
+                </p>                
+                <p>
+                    <button onclick="saveLocal()" type="button">Submit to local</button>
+                </p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

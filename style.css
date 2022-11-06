@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2px;
+    border-color: rgb(186, 186, 186);
+    border-radius: 10px;
+    border-bottom: 1px;
+    font-size: large;
+    
+}
+
+#register {
+    align-items: center;
+    width: device-width;
+    border: 10px;
+    border-color: black;
+    margin: 10%;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    height: 20px;
+    border-color: rgb(186, 186, 186);
+    border-radius: 10px;
+    border-bottom: 1px;
+    font-size: large;
+}
+
+input[type=radio] {
+    width: 15px;
+    height: 2em; 
+}
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    border-width: 0;
+    width: 100%;
+}
